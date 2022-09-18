@@ -7,28 +7,512 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DC1546E280229350089CF1D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1546D280229350089CF1D /* main.swift */; };
+		1D4BFFBB280A213A00E90288 /* CeroClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFBA280A213A00E90288 /* CeroClient.swift */; };
+		1D4BFFBD280BC39600E90288 /* JNI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFBC280BC39600E90288 /* JNI.swift */; };
+		1D4BFFC0280CF04900E90288 /* JavaClassWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFBF280CF04900E90288 /* JavaClassWrapper.swift */; };
+		1D4BFFC4280E0DE900E90288 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFC3280E0DE900E90288 /* Methods.swift */; };
+		1D4BFFC6280E0E4900E90288 /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFC5280E0E4900E90288 /* Fields.swift */; };
+		1D4BFFC8280E2A5000E90288 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFC7280E2A5000E90288 /* Classes.swift */; };
+		1D4BFFCA280E48A400E90288 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFC9280E48A400E90288 /* Objects.swift */; };
+		1D4BFFCC280E5CB200E90288 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFCB280E5CB200E90288 /* Arrays.swift */; };
+		1D4BFFCE280E5D9E00E90288 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFCD280E5D9E00E90288 /* Strings.swift */; };
+		1D4BFFD0280E71AC00E90288 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFCF280E71AC00E90288 /* String.swift */; };
+		1D4BFFD2280E74A400E90288 /* References.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFD1280E74A400E90288 /* References.swift */; };
+		1D4BFFD6280F3AE200E90288 /* JavaClassWrapper+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFD5280F3AE200E90288 /* JavaClassWrapper+Methods.swift */; };
+		1D4BFFD8280F4DC900E90288 /* JavaClassWrapper+Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFD7280F4DC900E90288 /* JavaClassWrapper+Fields.swift */; };
+		1D4BFFDC2810923600E90288 /* Minecraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFDB2810923600E90288 /* Minecraft.swift */; };
+		1D4BFFE02810C21500E90288 /* MCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFDF2810C21500E90288 /* MCLogger.swift */; };
+		1D4BFFE22810CBD100E90288 /* Mappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFE12810CBD100E90288 /* Mappings.swift */; };
+		1D4BFFE42810CE6D00E90288 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFE32810CE6D00E90288 /* Player.swift */; };
+		1D4BFFE62810DAB600E90288 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BFFE52810DAB600E90288 /* World.swift */; };
+		1D5B88A42806087E0008341F /* libBootstrap.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 1DC154A42803A8A50089CF1D /* libBootstrap.dylib */; };
+		1D5B88AD28064BF40008341F /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B88AC28064BF40008341F /* dummy.cpp */; };
+		1DC1547E28022B760089CF1D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1547D28022B760089CF1D /* main.swift */; };
+		1DC1548A280285C50089CF1D /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC15489280285C50089CF1D /* Injector.swift */; };
+		1DC154A72803A8A50089CF1D /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC154A62803A8A50089CF1D /* main.h */; };
+		1DC154B22803AAE10089CF1D /* BootstrapMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC154B12803AAE10089CF1D /* BootstrapMain.swift */; };
+		1DC1550028049BFE0089CF1D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DC154FF28049BFE0089CF1D /* main.c */; };
+		1DED63F5280739AB00121B87 /* CommandUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED63F4280739AB00121B87 /* CommandUtils.swift */; };
+		1DED63F6280739AB00121B87 /* CommandUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED63F4280739AB00121B87 /* CommandUtils.swift */; };
+		1DED63F828073B2C00121B87 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED63F728073B2C00121B87 /* Logging.swift */; };
+		1DED65DC2807AC2E00121B87 /* Pointers+CeroClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED65DB2807AC2E00121B87 /* Pointers+CeroClient.swift */; };
+		1DFF90A32818EFEA0058D169 /* libRemoteExec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFF90A22818EFEA0058D169 /* libRemoteExec.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1DC154B62803B1200089CF1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DC15462280229350089CF1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC154A32803A8A50089CF1D;
+			remoteInfo = CeroClientBootstrap;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		1DC15468280229350089CF1D /* CopyFiles */ = {
+		1DC15468280229350089CF1D /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = assets;
+			dstSubfolderSpec = 16;
+			files = (
+				1D5B88A42806087E0008341F /* libBootstrap.dylib in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC154B82803B1200089CF1D /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DED65D528077A2200121B87 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1DC1546A280229350089CF1D /* CeroClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CeroClient; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DC1546D280229350089CF1D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1D4BFFB62807CC0800E90288 /* jni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jni.h; sourceTree = "<group>"; };
+		1D4BFFB8280A164B00E90288 /* jvmti.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jvmti.h; sourceTree = "<group>"; };
+		1D4BFFBA280A213A00E90288 /* CeroClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeroClient.swift; sourceTree = "<group>"; };
+		1D4BFFBC280BC39600E90288 /* JNI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNI.swift; sourceTree = "<group>"; };
+		1D4BFFBF280CF04900E90288 /* JavaClassWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaClassWrapper.swift; sourceTree = "<group>"; };
+		1D4BFFC3280E0DE900E90288 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
+		1D4BFFC5280E0E4900E90288 /* Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		1D4BFFC7280E2A5000E90288 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		1D4BFFC9280E48A400E90288 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		1D4BFFCB280E5CB200E90288 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		1D4BFFCD280E5D9E00E90288 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		1D4BFFCF280E71AC00E90288 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1D4BFFD1280E74A400E90288 /* References.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = References.swift; sourceTree = "<group>"; };
+		1D4BFFD5280F3AE200E90288 /* JavaClassWrapper+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JavaClassWrapper+Methods.swift"; sourceTree = "<group>"; };
+		1D4BFFD7280F4DC900E90288 /* JavaClassWrapper+Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JavaClassWrapper+Fields.swift"; sourceTree = "<group>"; };
+		1D4BFFDB2810923600E90288 /* Minecraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minecraft.swift; sourceTree = "<group>"; };
+		1D4BFFDF2810C21500E90288 /* MCLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCLogger.swift; sourceTree = "<group>"; };
+		1D4BFFE12810CBD100E90288 /* Mappings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappings.swift; sourceTree = "<group>"; };
+		1D4BFFE32810CE6D00E90288 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1D4BFFE52810DAB600E90288 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		1D5B88AC28064BF40008341F /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dummy.cpp; sourceTree = "<group>"; };
+		1D5B88AF28066C9D0008341F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D5B88B028066FD00008341F /* BootstrapBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BootstrapBridgingHeader.h; sourceTree = "<group>"; };
+		1DC1546A280229350089CF1D /* Launcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Launcher; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC1547D28022B760089CF1D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1DC154812802348A0089CF1D /* CeroClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CeroClient.entitlements; sourceTree = "<group>"; };
+		1DC15489280285C50089CF1D /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		1DC15490280376660089CF1D /* LauncherBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LauncherBridgingHeader.h; sourceTree = "<group>"; };
+		1DC154A42803A8A50089CF1D /* libBootstrap.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libBootstrap.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC154A62803A8A50089CF1D /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		1DC154B12803AAE10089CF1D /* BootstrapMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootstrapMain.swift; sourceTree = "<group>"; };
+		1DC154FF28049BFE0089CF1D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1DED63F4280739AB00121B87 /* CommandUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandUtils.swift; sourceTree = "<group>"; };
+		1DED63F728073B2C00121B87 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		1DED63FC2807439200121B87 /* javap.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = javap.1; sourceTree = "<group>"; };
+		1DED63FD2807439200121B87 /* jdeprscan.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jdeprscan.1; sourceTree = "<group>"; };
+		1DED63FE2807439200121B87 /* jpackage.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jpackage.1; sourceTree = "<group>"; };
+		1DED63FF2807439200121B87 /* serialver.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = serialver.1; sourceTree = "<group>"; };
+		1DED64002807439200121B87 /* jshell.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jshell.1; sourceTree = "<group>"; };
+		1DED64012807439200121B87 /* jstatd.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jstatd.1; sourceTree = "<group>"; };
+		1DED64022807439200121B87 /* jdb.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jdb.1; sourceTree = "<group>"; };
+		1DED64032807439200121B87 /* jabswitch.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jabswitch.1; sourceTree = "<group>"; };
+		1DED64042807439200121B87 /* java.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = java.1; sourceTree = "<group>"; };
+		1DED64052807439200121B87 /* ktab.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ktab.1; sourceTree = "<group>"; };
+		1DED64062807439200121B87 /* keytool.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = keytool.1; sourceTree = "<group>"; };
+		1DED64072807439200121B87 /* jmod.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jmod.1; sourceTree = "<group>"; };
+		1DED64082807439200121B87 /* jaccesswalker.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jaccesswalker.1; sourceTree = "<group>"; };
+		1DED64092807439200121B87 /* jstat.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jstat.1; sourceTree = "<group>"; };
+		1DED640A2807439200121B87 /* jcmd.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jcmd.1; sourceTree = "<group>"; };
+		1DED640B2807439200121B87 /* jfr.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jfr.1; sourceTree = "<group>"; };
+		1DED640C2807439200121B87 /* jdeps.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jdeps.1; sourceTree = "<group>"; };
+		1DED640D2807439200121B87 /* jhsdb.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jhsdb.1; sourceTree = "<group>"; };
+		1DED640E2807439200121B87 /* jconsole.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jconsole.1; sourceTree = "<group>"; };
+		1DED640F2807439200121B87 /* jar.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jar.1; sourceTree = "<group>"; };
+		1DED64102807439200121B87 /* jaccessinspector.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jaccessinspector.1; sourceTree = "<group>"; };
+		1DED64112807439200121B87 /* javadoc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = javadoc.1; sourceTree = "<group>"; };
+		1DED64122807439200121B87 /* jstack.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jstack.1; sourceTree = "<group>"; };
+		1DED64132807439200121B87 /* jrunscript.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jrunscript.1; sourceTree = "<group>"; };
+		1DED64142807439200121B87 /* rmid.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rmid.1; sourceTree = "<group>"; };
+		1DED64152807439200121B87 /* kinit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = kinit.1; sourceTree = "<group>"; };
+		1DED64162807439200121B87 /* jmap.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jmap.1; sourceTree = "<group>"; };
+		1DED64172807439200121B87 /* rmiregistry.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rmiregistry.1; sourceTree = "<group>"; };
+		1DED64182807439200121B87 /* jinfo.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jinfo.1; sourceTree = "<group>"; };
+		1DED64192807439200121B87 /* klist.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = klist.1; sourceTree = "<group>"; };
+		1DED641A2807439200121B87 /* jlink.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jlink.1; sourceTree = "<group>"; };
+		1DED641B2807439200121B87 /* javac.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = javac.1; sourceTree = "<group>"; };
+		1DED641C2807439200121B87 /* jps.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jps.1; sourceTree = "<group>"; };
+		1DED641D2807439200121B87 /* jarsigner.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jarsigner.1; sourceTree = "<group>"; };
+		1DED641F2807439200121B87 /* jarsigner */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jarsigner; sourceTree = "<group>"; };
+		1DED64202807439200121B87 /* jfr */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jfr; sourceTree = "<group>"; };
+		1DED64212807439200121B87 /* rmid */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rmid; sourceTree = "<group>"; };
+		1DED64222807439200121B87 /* jdb */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jdb; sourceTree = "<group>"; };
+		1DED64232807439200121B87 /* jstack */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jstack; sourceTree = "<group>"; };
+		1DED64242807439200121B87 /* rmiregistry */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rmiregistry; sourceTree = "<group>"; };
+		1DED64252807439200121B87 /* jar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jar; sourceTree = "<group>"; };
+		1DED64262807439200121B87 /* jcmd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jcmd; sourceTree = "<group>"; };
+		1DED64272807439200121B87 /* jrunscript */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jrunscript; sourceTree = "<group>"; };
+		1DED64282807439200121B87 /* jps */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jps; sourceTree = "<group>"; };
+		1DED64292807439200121B87 /* java */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = java; sourceTree = "<group>"; };
+		1DED642A2807439200121B87 /* jhsdb */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jhsdb; sourceTree = "<group>"; };
+		1DED642B2807439200121B87 /* javap */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = javap; sourceTree = "<group>"; };
+		1DED642C2807439200121B87 /* jdeprscan */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jdeprscan; sourceTree = "<group>"; };
+		1DED642D2807439200121B87 /* javac */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = javac; sourceTree = "<group>"; };
+		1DED642E2807439200121B87 /* keytool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = keytool; sourceTree = "<group>"; };
+		1DED642F2807439200121B87 /* jmod */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jmod; sourceTree = "<group>"; };
+		1DED64302807439200121B87 /* jmap */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jmap; sourceTree = "<group>"; };
+		1DED64312807439200121B87 /* jshell */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jshell; sourceTree = "<group>"; };
+		1DED64322807439200121B87 /* jstat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jstat; sourceTree = "<group>"; };
+		1DED64332807439200121B87 /* jlink */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jlink; sourceTree = "<group>"; };
+		1DED64342807439200121B87 /* serialver */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = serialver; sourceTree = "<group>"; };
+		1DED64352807439200121B87 /* javadoc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = javadoc; sourceTree = "<group>"; };
+		1DED64362807439200121B87 /* jinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jinfo; sourceTree = "<group>"; };
+		1DED64372807439200121B87 /* jstatd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jstatd; sourceTree = "<group>"; };
+		1DED64382807439200121B87 /* jdeps */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jdeps; sourceTree = "<group>"; };
+		1DED64392807439200121B87 /* jconsole */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jconsole; sourceTree = "<group>"; };
+		1DED643A2807439200121B87 /* jpackage */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jpackage; sourceTree = "<group>"; };
+		1DED643B2807439200121B87 /* jimage */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jimage; sourceTree = "<group>"; };
+		1DED643D2807439200121B87 /* jawt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jawt.h; sourceTree = "<group>"; };
+		1DED643E2807439200121B87 /* classfile_constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = classfile_constants.h; sourceTree = "<group>"; };
+		1DED643F2807439200121B87 /* jdwpTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jdwpTransport.h; sourceTree = "<group>"; };
+		1DED64402807439200121B87 /* jvmti.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jvmti.h; sourceTree = "<group>"; };
+		1DED64412807439200121B87 /* jni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jni.h; sourceTree = "<group>"; };
+		1DED64422807439200121B87 /* jvmticmlr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jvmticmlr.h; sourceTree = "<group>"; };
+		1DED64442807439200121B87 /* jni_md.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jni_md.h; sourceTree = "<group>"; };
+		1DED64452807439200121B87 /* jawt_md.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jawt_md.h; sourceTree = "<group>"; };
+		1DED64462807439200121B87 /* release */ = {isa = PBXFileReference; lastKnownFileType = text; path = release; sourceTree = "<group>"; };
+		1DED64482807439200121B87 /* libnet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libnet.dylib; sourceTree = "<group>"; };
+		1DED64492807439200121B87 /* libnio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libnio.dylib; sourceTree = "<group>"; };
+		1DED644A2807439200121B87 /* libinstrument.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libinstrument.dylib; sourceTree = "<group>"; };
+		1DED644B2807439200121B87 /* libzip.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libzip.dylib; sourceTree = "<group>"; };
+		1DED644C2807439200121B87 /* psfontj2d.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = psfontj2d.properties; sourceTree = "<group>"; };
+		1DED644D2807439200121B87 /* fontconfig.properties.src */ = {isa = PBXFileReference; lastKnownFileType = text; path = fontconfig.properties.src; sourceTree = "<group>"; };
+		1DED644E2807439200121B87 /* libfreetype.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfreetype.dylib; sourceTree = "<group>"; };
+		1DED644F2807439200121B87 /* libjli.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjli.dylib; sourceTree = "<group>"; };
+		1DED64502807439200121B87 /* libsplashscreen.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsplashscreen.dylib; sourceTree = "<group>"; };
+		1DED64512807439200121B87 /* libmanagement_ext.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmanagement_ext.dylib; sourceTree = "<group>"; };
+		1DED64522807439200121B87 /* libdt_socket.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libdt_socket.dylib; sourceTree = "<group>"; };
+		1DED64532807439200121B87 /* libj2pkcs11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libj2pkcs11.dylib; sourceTree = "<group>"; };
+		1DED64542807439200121B87 /* jvm.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = jvm.cfg; sourceTree = "<group>"; };
+		1DED64552807439200121B87 /* libjimage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjimage.dylib; sourceTree = "<group>"; };
+		1DED64572807439200121B87 /* public_suffix_list.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_suffix_list.dat; sourceTree = "<group>"; };
+		1DED64582807439200121B87 /* default.policy */ = {isa = PBXFileReference; lastKnownFileType = text; path = default.policy; sourceTree = "<group>"; };
+		1DED64592807439200121B87 /* blacklisted.certs */ = {isa = PBXFileReference; lastKnownFileType = text; path = blacklisted.certs; sourceTree = "<group>"; };
+		1DED645A2807439200121B87 /* cacerts */ = {isa = PBXFileReference; lastKnownFileType = file; path = cacerts; sourceTree = "<group>"; };
+		1DED645C2807439200121B87 /* default.jfc */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = default.jfc; sourceTree = "<group>"; };
+		1DED645D2807439200121B87 /* profile.jfc */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = profile.jfc; sourceTree = "<group>"; };
+		1DED645E2807439200121B87 /* libosxkrb5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxkrb5.dylib; sourceTree = "<group>"; };
+		1DED645F2807439200121B87 /* libosxui.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxui.dylib; sourceTree = "<group>"; };
+		1DED64602807439200121B87 /* tzdb.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = tzdb.dat; sourceTree = "<group>"; };
+		1DED64612807439200121B87 /* libmanagement_agent.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmanagement_agent.dylib; sourceTree = "<group>"; };
+		1DED64622807439200121B87 /* librmi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = librmi.dylib; sourceTree = "<group>"; };
+		1DED64632807439200121B87 /* libjdwp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjdwp.dylib; sourceTree = "<group>"; };
+		1DED64642807439200121B87 /* libawt_lwawt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libawt_lwawt.dylib; sourceTree = "<group>"; };
+		1DED64662807439200121B87 /* classes_nocoops.jsa */ = {isa = PBXFileReference; lastKnownFileType = file; path = classes_nocoops.jsa; sourceTree = "<group>"; };
+		1DED64672807439200121B87 /* libjvm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjvm.dylib; sourceTree = "<group>"; };
+		1DED64682807439200121B87 /* classes.jsa */ = {isa = PBXFileReference; lastKnownFileType = file; path = classes.jsa; sourceTree = "<group>"; };
+		1DED64692807439200121B87 /* libjsig.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjsig.dylib; sourceTree = "<group>"; };
+		1DED646A2807439200121B87 /* libjavajpeg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjavajpeg.dylib; sourceTree = "<group>"; };
+		1DED646B2807439200121B87 /* libmlib_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmlib_image.dylib; sourceTree = "<group>"; };
+		1DED646C2807439200121B87 /* libmanagement.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmanagement.dylib; sourceTree = "<group>"; };
+		1DED646D2807439200121B87 /* libjsound.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjsound.dylib; sourceTree = "<group>"; };
+		1DED646E2807439200121B87 /* ct.sym */ = {isa = PBXFileReference; lastKnownFileType = file; path = ct.sym; sourceTree = "<group>"; };
+		1DED646F2807439200121B87 /* libj2pcsc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libj2pcsc.dylib; sourceTree = "<group>"; };
+		1DED64702807439200121B87 /* libjsig.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjsig.dylib; sourceTree = "<group>"; };
+		1DED64712807439200121B87 /* libprefs.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libprefs.dylib; sourceTree = "<group>"; };
+		1DED64722807439200121B87 /* libjawt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjawt.dylib; sourceTree = "<group>"; };
+		1DED64732807439200121B87 /* libattach.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libattach.dylib; sourceTree = "<group>"; };
+		1DED64742807439200121B87 /* jrt-fs.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "jrt-fs.jar"; sourceTree = "<group>"; };
+		1DED64752807439200121B87 /* libfontmanager.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfontmanager.dylib; sourceTree = "<group>"; };
+		1DED64762807439200121B87 /* fontconfig.bfc */ = {isa = PBXFileReference; lastKnownFileType = file; path = fontconfig.bfc; sourceTree = "<group>"; };
+		1DED64772807439200121B87 /* src.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = src.zip; sourceTree = "<group>"; };
+		1DED64782807439200121B87 /* jspawnhelper */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jspawnhelper; sourceTree = "<group>"; };
+		1DED64792807439200121B87 /* libosxsecurity.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxsecurity.dylib; sourceTree = "<group>"; };
+		1DED647A2807439200121B87 /* libextnet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libextnet.dylib; sourceTree = "<group>"; };
+		1DED647B2807439200121B87 /* libjaas.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjaas.dylib; sourceTree = "<group>"; };
+		1DED647C2807439200121B87 /* liblcms.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblcms.dylib; sourceTree = "<group>"; };
+		1DED647D2807439200121B87 /* libverify.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libverify.dylib; sourceTree = "<group>"; };
+		1DED647E2807439200121B87 /* libharfbuzz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libharfbuzz.dylib; sourceTree = "<group>"; };
+		1DED647F2807439200121B87 /* psfont.properties.ja */ = {isa = PBXFileReference; lastKnownFileType = text; path = psfont.properties.ja; sourceTree = "<group>"; };
+		1DED64802807439200121B87 /* libj2gss.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libj2gss.dylib; sourceTree = "<group>"; };
+		1DED64812807439200121B87 /* libsaproc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsaproc.dylib; sourceTree = "<group>"; };
+		1DED64822807439200121B87 /* modules */ = {isa = PBXFileReference; lastKnownFileType = file; path = modules; sourceTree = "<group>"; };
+		1DED64832807439200121B87 /* classlist */ = {isa = PBXFileReference; lastKnownFileType = text; path = classlist; sourceTree = "<group>"; };
+		1DED64842807439200121B87 /* libjava.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjava.dylib; sourceTree = "<group>"; };
+		1DED64852807439200121B87 /* libawt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libawt.dylib; sourceTree = "<group>"; };
+		1DED64862807439200121B87 /* libosx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosx.dylib; sourceTree = "<group>"; };
+		1DED64872807439200121B87 /* libosxapp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxapp.dylib; sourceTree = "<group>"; };
+		1DED648A2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED648B2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED648D2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED648E2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64902807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64912807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64932807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64942807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64962807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64972807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64992807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED649A2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED649C2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED649D2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED649F2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64A02807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64A22807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64A32807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64A52807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64A62807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64A82807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64A92807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64AB2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64AC2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64AD2807439200121B87 /* dynalink.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dynalink.md; sourceTree = "<group>"; };
+		1DED64AF2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64B02807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64B22807439200121B87 /* bcel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = bcel.md; sourceTree = "<group>"; };
+		1DED64B32807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64B42807439200121B87 /* xalan.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = xalan.md; sourceTree = "<group>"; };
+		1DED64B52807439200121B87 /* dom.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dom.md; sourceTree = "<group>"; };
+		1DED64B62807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64B72807439200121B87 /* jcup.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = jcup.md; sourceTree = "<group>"; };
+		1DED64B82807439200121B87 /* xerces.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = xerces.md; sourceTree = "<group>"; };
+		1DED64BA2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64BB2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64BD2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64BE2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64C02807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64C12807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64C32807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64C42807439200121B87 /* cldr.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = cldr.md; sourceTree = "<group>"; };
+		1DED64C52807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64C62807439200121B87 /* thaidict.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = thaidict.md; sourceTree = "<group>"; };
+		1DED64C82807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64C92807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64CB2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64CC2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64CE2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64CF2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64D12807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64D22807439200121B87 /* pkcs11wrapper.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pkcs11wrapper.md; sourceTree = "<group>"; };
+		1DED64D32807439200121B87 /* pkcs11cryptotoken.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pkcs11cryptotoken.md; sourceTree = "<group>"; };
+		1DED64D42807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64D62807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64D72807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64D92807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64DA2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64DC2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64DD2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64DF2807439200121B87 /* asm.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = asm.md; sourceTree = "<group>"; };
+		1DED64E02807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64E12807439200121B87 /* public_suffix.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = public_suffix.md; sourceTree = "<group>"; };
+		1DED64E22807439200121B87 /* cldr.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = cldr.md; sourceTree = "<group>"; };
+		1DED64E32807439200121B87 /* icu.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = icu.md; sourceTree = "<group>"; };
+		1DED64E42807439200121B87 /* unicode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = unicode.md; sourceTree = "<group>"; };
+		1DED64E52807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64E62807439200121B87 /* c-libutl.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "c-libutl.md"; sourceTree = "<group>"; };
+		1DED64E72807439200121B87 /* aes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = aes.md; sourceTree = "<group>"; };
+		1DED64E92807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64EA2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64EC2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64ED2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64EF2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64F02807439200121B87 /* jopt-simple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "jopt-simple.md"; sourceTree = "<group>"; };
+		1DED64F12807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64F32807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64F42807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64F62807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64F72807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64F92807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64FA2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64FC2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED64FD2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED64FF2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65002807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65022807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65032807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65052807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65062807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65082807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65092807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED650B2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED650C2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED650E2807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED650F2807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65102807439200121B87 /* jline.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = jline.md; sourceTree = "<group>"; };
+		1DED65122807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65132807439200121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65152807439200121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65162807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65182807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65192807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED651B2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED651C2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED651E2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED651F2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65212807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65222807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65242807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65252807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65272807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65282807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED652A2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED652B2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED652C2807439300121B87 /* pcsclite.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pcsclite.md; sourceTree = "<group>"; };
+		1DED652E2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED652F2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65312807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65322807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65342807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65352807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65372807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65382807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED653A2807439300121B87 /* jquery.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = jquery.md; sourceTree = "<group>"; };
+		1DED653B2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED653C2807439300121B87 /* jqueryUI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = jqueryUI.md; sourceTree = "<group>"; };
+		1DED653D2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED653F2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65402807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65422807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65432807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65452807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65462807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65482807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65492807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED654B2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED654C2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED654E2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED654F2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65512807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65522807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65542807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65552807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65572807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65582807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED655A2807439300121B87 /* freetype.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = freetype.md; sourceTree = "<group>"; };
+		1DED655B2807439300121B87 /* mesa3d.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = mesa3d.md; sourceTree = "<group>"; };
+		1DED655C2807439300121B87 /* colorimaging.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = colorimaging.md; sourceTree = "<group>"; };
+		1DED655D2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED655E2807439300121B87 /* libpng.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = libpng.md; sourceTree = "<group>"; };
+		1DED655F2807439300121B87 /* xwd.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = xwd.md; sourceTree = "<group>"; };
+		1DED65602807439300121B87 /* giflib.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = giflib.md; sourceTree = "<group>"; };
+		1DED65612807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65622807439300121B87 /* harfbuzz.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = harfbuzz.md; sourceTree = "<group>"; };
+		1DED65632807439300121B87 /* jpeg.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = jpeg.md; sourceTree = "<group>"; };
+		1DED65642807439300121B87 /* lcms.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = lcms.md; sourceTree = "<group>"; };
+		1DED65662807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65672807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65692807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED656A2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED656C2807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED656D2807439300121B87 /* santuario.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = santuario.md; sourceTree = "<group>"; };
+		1DED656E2807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65702807439300121B87 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DED65712807439300121B87 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		1DED65732807439300121B87 /* logging.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = logging.properties; sourceTree = "<group>"; };
+		1DED65742807439300121B87 /* sound.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = sound.properties; sourceTree = "<group>"; };
+		1DED65762807439300121B87 /* java.security */ = {isa = PBXFileReference; lastKnownFileType = text; path = java.security; sourceTree = "<group>"; };
+		1DED65772807439300121B87 /* java.policy */ = {isa = PBXFileReference; lastKnownFileType = text; path = java.policy; sourceTree = "<group>"; };
+		1DED657A2807439300121B87 /* default_US_export.policy */ = {isa = PBXFileReference; lastKnownFileType = text; path = default_US_export.policy; sourceTree = "<group>"; };
+		1DED657B2807439300121B87 /* default_local.policy */ = {isa = PBXFileReference; lastKnownFileType = text; path = default_local.policy; sourceTree = "<group>"; };
+		1DED657C2807439300121B87 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1DED657E2807439300121B87 /* default_US_export.policy */ = {isa = PBXFileReference; lastKnownFileType = text; path = default_US_export.policy; sourceTree = "<group>"; };
+		1DED657F2807439300121B87 /* exempt_local.policy */ = {isa = PBXFileReference; lastKnownFileType = text; path = exempt_local.policy; sourceTree = "<group>"; };
+		1DED65802807439300121B87 /* default_local.policy */ = {isa = PBXFileReference; lastKnownFileType = text; path = default_local.policy; sourceTree = "<group>"; };
+		1DED65812807439300121B87 /* net.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = net.properties; sourceTree = "<group>"; };
+		1DED65832807439300121B87 /* jmxremote.access */ = {isa = PBXFileReference; lastKnownFileType = text; path = jmxremote.access; sourceTree = "<group>"; };
+		1DED65842807439300121B87 /* management.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = management.properties; sourceTree = "<group>"; };
+		1DED65852807439300121B87 /* jmxremote.password.template */ = {isa = PBXFileReference; lastKnownFileType = text; path = jmxremote.password.template; sourceTree = "<group>"; };
+		1DED65872807439300121B87 /* java.security.sasl.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.security.sasl.jmod; sourceTree = "<group>"; };
+		1DED65882807439300121B87 /* jdk.jartool.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jartool.jmod; sourceTree = "<group>"; };
+		1DED65892807439300121B87 /* java.se.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.se.jmod; sourceTree = "<group>"; };
+		1DED658A2807439300121B87 /* jdk.zipfs.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.zipfs.jmod; sourceTree = "<group>"; };
+		1DED658B2807439300121B87 /* jdk.jdeps.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jdeps.jmod; sourceTree = "<group>"; };
+		1DED658C2807439300121B87 /* jdk.jstatd.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jstatd.jmod; sourceTree = "<group>"; };
+		1DED658D2807439300121B87 /* jdk.jdwp.agent.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jdwp.agent.jmod; sourceTree = "<group>"; };
+		1DED658E2807439300121B87 /* java.sql.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.sql.jmod; sourceTree = "<group>"; };
+		1DED658F2807439300121B87 /* jdk.incubator.foreign.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.incubator.foreign.jmod; sourceTree = "<group>"; };
+		1DED65902807439300121B87 /* java.smartcardio.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.smartcardio.jmod; sourceTree = "<group>"; };
+		1DED65912807439300121B87 /* jdk.hotspot.agent.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.hotspot.agent.jmod; sourceTree = "<group>"; };
+		1DED65922807439300121B87 /* jdk.internal.jvmstat.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.internal.jvmstat.jmod; sourceTree = "<group>"; };
+		1DED65932807439300121B87 /* java.compiler.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.compiler.jmod; sourceTree = "<group>"; };
+		1DED65942807439300121B87 /* jdk.incubator.vector.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.incubator.vector.jmod; sourceTree = "<group>"; };
+		1DED65952807439300121B87 /* java.sql.rowset.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.sql.rowset.jmod; sourceTree = "<group>"; };
+		1DED65962807439300121B87 /* jdk.jfr.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jfr.jmod; sourceTree = "<group>"; };
+		1DED65972807439300121B87 /* jdk.jpackage.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jpackage.jmod; sourceTree = "<group>"; };
+		1DED65982807439300121B87 /* jdk.crypto.cryptoki.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.crypto.cryptoki.jmod; sourceTree = "<group>"; };
+		1DED65992807439300121B87 /* jdk.unsupported.desktop.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.unsupported.desktop.jmod; sourceTree = "<group>"; };
+		1DED659A2807439300121B87 /* jdk.management.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.management.jmod; sourceTree = "<group>"; };
+		1DED659B2807439300121B87 /* java.rmi.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.rmi.jmod; sourceTree = "<group>"; };
+		1DED659C2807439300121B87 /* jdk.management.jfr.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.management.jfr.jmod; sourceTree = "<group>"; };
+		1DED659D2807439300121B87 /* jdk.sctp.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.sctp.jmod; sourceTree = "<group>"; };
+		1DED659E2807439300121B87 /* jdk.security.jgss.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.security.jgss.jmod; sourceTree = "<group>"; };
+		1DED659F2807439300121B87 /* jdk.net.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.net.jmod; sourceTree = "<group>"; };
+		1DED65A02807439300121B87 /* java.prefs.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.prefs.jmod; sourceTree = "<group>"; };
+		1DED65A12807439300121B87 /* java.logging.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.logging.jmod; sourceTree = "<group>"; };
+		1DED65A22807439300121B87 /* jdk.xml.dom.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.xml.dom.jmod; sourceTree = "<group>"; };
+		1DED65A32807439300121B87 /* java.base.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.base.jmod; sourceTree = "<group>"; };
+		1DED65A42807439300121B87 /* java.xml.crypto.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.xml.crypto.jmod; sourceTree = "<group>"; };
+		1DED65A52807439300121B87 /* java.naming.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.naming.jmod; sourceTree = "<group>"; };
+		1DED65A62807439300121B87 /* jdk.internal.ed.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.internal.ed.jmod; sourceTree = "<group>"; };
+		1DED65A72807439300121B87 /* jdk.naming.dns.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.naming.dns.jmod; sourceTree = "<group>"; };
+		1DED65A82807439300121B87 /* java.datatransfer.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.datatransfer.jmod; sourceTree = "<group>"; };
+		1DED65A92807439300121B87 /* jdk.unsupported.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.unsupported.jmod; sourceTree = "<group>"; };
+		1DED65AA2807439300121B87 /* jdk.jlink.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jlink.jmod; sourceTree = "<group>"; };
+		1DED65AB2807439300121B87 /* jdk.charsets.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.charsets.jmod; sourceTree = "<group>"; };
+		1DED65AC2807439300121B87 /* jdk.localedata.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.localedata.jmod; sourceTree = "<group>"; };
+		1DED65AD2807439300121B87 /* jdk.jcmd.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jcmd.jmod; sourceTree = "<group>"; };
+		1DED65AE2807439300121B87 /* java.desktop.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.desktop.jmod; sourceTree = "<group>"; };
+		1DED65AF2807439300121B87 /* jdk.accessibility.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.accessibility.jmod; sourceTree = "<group>"; };
+		1DED65B02807439300121B87 /* jdk.attach.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.attach.jmod; sourceTree = "<group>"; };
+		1DED65B12807439300121B87 /* java.management.rmi.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.management.rmi.jmod; sourceTree = "<group>"; };
+		1DED65B22807439300121B87 /* java.transaction.xa.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.transaction.xa.jmod; sourceTree = "<group>"; };
+		1DED65B32807439300121B87 /* jdk.jshell.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jshell.jmod; sourceTree = "<group>"; };
+		1DED65B42807439300121B87 /* java.xml.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.xml.jmod; sourceTree = "<group>"; };
+		1DED65B52807439300121B87 /* java.management.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.management.jmod; sourceTree = "<group>"; };
+		1DED65B62807439300121B87 /* jdk.internal.opt.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.internal.opt.jmod; sourceTree = "<group>"; };
+		1DED65B72807439300121B87 /* jdk.httpserver.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.httpserver.jmod; sourceTree = "<group>"; };
+		1DED65B82807439300121B87 /* java.net.http.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.net.http.jmod; sourceTree = "<group>"; };
+		1DED65B92807439300121B87 /* jdk.compiler.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.compiler.jmod; sourceTree = "<group>"; };
+		1DED65BA2807439300121B87 /* jdk.internal.le.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.internal.le.jmod; sourceTree = "<group>"; };
+		1DED65BB2807439300121B87 /* java.instrument.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.instrument.jmod; sourceTree = "<group>"; };
+		1DED65BC2807439300121B87 /* jdk.dynalink.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.dynalink.jmod; sourceTree = "<group>"; };
+		1DED65BD2807439300121B87 /* jdk.management.agent.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.management.agent.jmod; sourceTree = "<group>"; };
+		1DED65BE2807439300121B87 /* jdk.internal.vm.ci.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.internal.vm.ci.jmod; sourceTree = "<group>"; };
+		1DED65BF2807439300121B87 /* jdk.security.auth.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.security.auth.jmod; sourceTree = "<group>"; };
+		1DED65C02807439300121B87 /* java.scripting.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.scripting.jmod; sourceTree = "<group>"; };
+		1DED65C12807439300121B87 /* jdk.jdi.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jdi.jmod; sourceTree = "<group>"; };
+		1DED65C22807439300121B87 /* jdk.crypto.ec.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.crypto.ec.jmod; sourceTree = "<group>"; };
+		1DED65C32807439300121B87 /* jdk.naming.rmi.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.naming.rmi.jmod; sourceTree = "<group>"; };
+		1DED65C42807439300121B87 /* jdk.jconsole.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jconsole.jmod; sourceTree = "<group>"; };
+		1DED65C52807439300121B87 /* jdk.javadoc.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.javadoc.jmod; sourceTree = "<group>"; };
+		1DED65C62807439300121B87 /* jdk.editpad.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.editpad.jmod; sourceTree = "<group>"; };
+		1DED65C72807439300121B87 /* jdk.jsobject.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.jsobject.jmod; sourceTree = "<group>"; };
+		1DED65C82807439300121B87 /* java.security.jgss.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = java.security.jgss.jmod; sourceTree = "<group>"; };
+		1DED65C92807439300121B87 /* jdk.nio.mapmode.jmod */ = {isa = PBXFileReference; lastKnownFileType = file; path = jdk.nio.mapmode.jmod; sourceTree = "<group>"; };
+		1DED65CB2807486100121B87 /* libjli.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjli.dylib; path = "../../../../../Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/MacOS/libjli.dylib"; sourceTree = "<group>"; };
+		1DED65DB2807AC2E00121B87 /* Pointers+CeroClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pointers+CeroClient.swift"; sourceTree = "<group>"; };
+		1DFF90A22818EFEA0058D169 /* libRemoteExec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRemoteExec.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1DC15467280229350089CF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFF90A32818EFEA0058D169 /* libRemoteExec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC154A22803A8A50089CF1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,49 +522,1300 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D4BFFB7280A08EA00E90288 /* substrate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = substrate;
+			sourceTree = "<group>";
+		};
+		1D4BFFB9280A1F2900E90288 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1DED63F728073B2C00121B87 /* Logging.swift */,
+				1DED65DB2807AC2E00121B87 /* Pointers+CeroClient.swift */,
+				1D4BFFCF280E71AC00E90288 /* String.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1D4BFFBE280CE4AA00E90288 /* Interfacing */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFD92810863B00E90288 /* Mappings */,
+				1D4BFFD4280F3AC800E90288 /* Wrappers */,
+				1D4BFFD3280F3ABC00E90288 /* JNI */,
+			);
+			path = Interfacing;
+			sourceTree = "<group>";
+		};
+		1D4BFFD3280F3ABC00E90288 /* JNI */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFBC280BC39600E90288 /* JNI.swift */,
+				1D4BFFC7280E2A5000E90288 /* Classes.swift */,
+				1D4BFFC9280E48A400E90288 /* Objects.swift */,
+				1D4BFFC3280E0DE900E90288 /* Methods.swift */,
+				1D4BFFC5280E0E4900E90288 /* Fields.swift */,
+				1D4BFFCB280E5CB200E90288 /* Arrays.swift */,
+				1D4BFFCD280E5D9E00E90288 /* Strings.swift */,
+				1D4BFFD1280E74A400E90288 /* References.swift */,
+			);
+			path = JNI;
+			sourceTree = "<group>";
+		};
+		1D4BFFD4280F3AC800E90288 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFBF280CF04900E90288 /* JavaClassWrapper.swift */,
+				1D4BFFD5280F3AE200E90288 /* JavaClassWrapper+Methods.swift */,
+				1D4BFFD7280F4DC900E90288 /* JavaClassWrapper+Fields.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		1D4BFFD92810863B00E90288 /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFE12810CBD100E90288 /* Mappings.swift */,
+				1D4BFFDB2810923600E90288 /* Minecraft.swift */,
+				1D4BFFDF2810C21500E90288 /* MCLogger.swift */,
+				1D4BFFE32810CE6D00E90288 /* Player.swift */,
+				1D4BFFE52810DAB600E90288 /* World.swift */,
+			);
+			path = Mappings;
+			sourceTree = "<group>";
+		};
+		1D4BFFDA281090FC00E90288 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFBA280A213A00E90288 /* CeroClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		1D5B88AE28066B1E0008341F /* libRemoteExec */ = {
+			isa = PBXGroup;
+			children = (
+				1DFF90A22818EFEA0058D169 /* libRemoteExec.a */,
+				1D5B88AC28064BF40008341F /* dummy.cpp */,
+				1D5B88AF28066C9D0008341F /* README.md */,
+			);
+			path = libRemoteExec;
+			sourceTree = "<group>";
+		};
+		1D5B88B92806852E0008341F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1DED63F4280739AB00121B87 /* CommandUtils.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		1DC15461280229350089CF1D = {
 			isa = PBXGroup;
 			children = (
-				1DC1546C280229350089CF1D /* CeroClient */,
+				1DC154AE2803A9A80089CF1D /* Headers */,
+				1D5B88B92806852E0008341F /* Shared */,
+				1DC154AF2803A9CE0089CF1D /* Dependancies */,
+				1DC1546C280229350089CF1D /* Launcher */,
+				1DC154A52803A8A50089CF1D /* Bootstrap */,
 				1DC1546B280229350089CF1D /* Products */,
+				1DC154B32803B1200089CF1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		1DC1546B280229350089CF1D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1DC1546A280229350089CF1D /* CeroClient */,
+				1DC1546A280229350089CF1D /* Launcher */,
+				1DC154A42803A8A50089CF1D /* libBootstrap.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1DC1546C280229350089CF1D /* CeroClient */ = {
+		1DC1546C280229350089CF1D /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
-				1DC1546D280229350089CF1D /* main.swift */,
+				1DC154F72803D61A0089CF1D /* Bundle Info */,
+				1DC15489280285C50089CF1D /* Injector.swift */,
+				1DC1547D28022B760089CF1D /* main.swift */,
 			);
-			path = CeroClient;
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		1DC154A52803A8A50089CF1D /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFDA281090FC00E90288 /* Client */,
+				1D4BFFBE280CE4AA00E90288 /* Interfacing */,
+				1D4BFFB9280A1F2900E90288 /* Utilities */,
+				1DC1550228049EC30089CF1D /* Entry */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		1DC154AE2803A9A80089CF1D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFB8280A164B00E90288 /* jvmti.h */,
+				1DC154A62803A8A50089CF1D /* main.h */,
+				1D5B88B028066FD00008341F /* BootstrapBridgingHeader.h */,
+				1DC15490280376660089CF1D /* LauncherBridgingHeader.h */,
+				1D4BFFB62807CC0800E90288 /* jni.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		1DC154AF2803A9CE0089CF1D /* Dependancies */ = {
+			isa = PBXGroup;
+			children = (
+				1D4BFFB7280A08EA00E90288 /* substrate */,
+				1D5B88AE28066B1E0008341F /* libRemoteExec */,
+			);
+			path = Dependancies;
+			sourceTree = "<group>";
+		};
+		1DC154B32803B1200089CF1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65CB2807486100121B87 /* libjli.dylib */,
+				1DED63F92807439200121B87 /* Home */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DC154F72803D61A0089CF1D /* Bundle Info */ = {
+			isa = PBXGroup;
+			children = (
+				1DC154812802348A0089CF1D /* CeroClient.entitlements */,
+			);
+			path = "Bundle Info";
+			sourceTree = "<group>";
+		};
+		1DC1550228049EC30089CF1D /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				1DC154B12803AAE10089CF1D /* BootstrapMain.swift */,
+				1DC154FF28049BFE0089CF1D /* main.c */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		1DED63F92807439200121B87 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1DED63FA2807439200121B87 /* man */,
+				1DED641E2807439200121B87 /* bin */,
+				1DED643C2807439200121B87 /* include */,
+				1DED64462807439200121B87 /* release */,
+				1DED64472807439200121B87 /* lib */,
+				1DED64882807439200121B87 /* legal */,
+				1DED65722807439300121B87 /* conf */,
+				1DED65862807439300121B87 /* jmods */,
+			);
+			name = Home;
+			path = "../../../../../Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home";
+			sourceTree = "<group>";
+		};
+		1DED63FA2807439200121B87 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				1DED63FB2807439200121B87 /* man1 */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		1DED63FB2807439200121B87 /* man1 */ = {
+			isa = PBXGroup;
+			children = (
+				1DED63FC2807439200121B87 /* javap.1 */,
+				1DED63FD2807439200121B87 /* jdeprscan.1 */,
+				1DED63FE2807439200121B87 /* jpackage.1 */,
+				1DED63FF2807439200121B87 /* serialver.1 */,
+				1DED64002807439200121B87 /* jshell.1 */,
+				1DED64012807439200121B87 /* jstatd.1 */,
+				1DED64022807439200121B87 /* jdb.1 */,
+				1DED64032807439200121B87 /* jabswitch.1 */,
+				1DED64042807439200121B87 /* java.1 */,
+				1DED64052807439200121B87 /* ktab.1 */,
+				1DED64062807439200121B87 /* keytool.1 */,
+				1DED64072807439200121B87 /* jmod.1 */,
+				1DED64082807439200121B87 /* jaccesswalker.1 */,
+				1DED64092807439200121B87 /* jstat.1 */,
+				1DED640A2807439200121B87 /* jcmd.1 */,
+				1DED640B2807439200121B87 /* jfr.1 */,
+				1DED640C2807439200121B87 /* jdeps.1 */,
+				1DED640D2807439200121B87 /* jhsdb.1 */,
+				1DED640E2807439200121B87 /* jconsole.1 */,
+				1DED640F2807439200121B87 /* jar.1 */,
+				1DED64102807439200121B87 /* jaccessinspector.1 */,
+				1DED64112807439200121B87 /* javadoc.1 */,
+				1DED64122807439200121B87 /* jstack.1 */,
+				1DED64132807439200121B87 /* jrunscript.1 */,
+				1DED64142807439200121B87 /* rmid.1 */,
+				1DED64152807439200121B87 /* kinit.1 */,
+				1DED64162807439200121B87 /* jmap.1 */,
+				1DED64172807439200121B87 /* rmiregistry.1 */,
+				1DED64182807439200121B87 /* jinfo.1 */,
+				1DED64192807439200121B87 /* klist.1 */,
+				1DED641A2807439200121B87 /* jlink.1 */,
+				1DED641B2807439200121B87 /* javac.1 */,
+				1DED641C2807439200121B87 /* jps.1 */,
+				1DED641D2807439200121B87 /* jarsigner.1 */,
+			);
+			path = man1;
+			sourceTree = "<group>";
+		};
+		1DED641E2807439200121B87 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				1DED641F2807439200121B87 /* jarsigner */,
+				1DED64202807439200121B87 /* jfr */,
+				1DED64212807439200121B87 /* rmid */,
+				1DED64222807439200121B87 /* jdb */,
+				1DED64232807439200121B87 /* jstack */,
+				1DED64242807439200121B87 /* rmiregistry */,
+				1DED64252807439200121B87 /* jar */,
+				1DED64262807439200121B87 /* jcmd */,
+				1DED64272807439200121B87 /* jrunscript */,
+				1DED64282807439200121B87 /* jps */,
+				1DED64292807439200121B87 /* java */,
+				1DED642A2807439200121B87 /* jhsdb */,
+				1DED642B2807439200121B87 /* javap */,
+				1DED642C2807439200121B87 /* jdeprscan */,
+				1DED642D2807439200121B87 /* javac */,
+				1DED642E2807439200121B87 /* keytool */,
+				1DED642F2807439200121B87 /* jmod */,
+				1DED64302807439200121B87 /* jmap */,
+				1DED64312807439200121B87 /* jshell */,
+				1DED64322807439200121B87 /* jstat */,
+				1DED64332807439200121B87 /* jlink */,
+				1DED64342807439200121B87 /* serialver */,
+				1DED64352807439200121B87 /* javadoc */,
+				1DED64362807439200121B87 /* jinfo */,
+				1DED64372807439200121B87 /* jstatd */,
+				1DED64382807439200121B87 /* jdeps */,
+				1DED64392807439200121B87 /* jconsole */,
+				1DED643A2807439200121B87 /* jpackage */,
+				1DED643B2807439200121B87 /* jimage */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		1DED643C2807439200121B87 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1DED643D2807439200121B87 /* jawt.h */,
+				1DED643E2807439200121B87 /* classfile_constants.h */,
+				1DED643F2807439200121B87 /* jdwpTransport.h */,
+				1DED64402807439200121B87 /* jvmti.h */,
+				1DED64412807439200121B87 /* jni.h */,
+				1DED64422807439200121B87 /* jvmticmlr.h */,
+				1DED64432807439200121B87 /* darwin */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1DED64432807439200121B87 /* darwin */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64442807439200121B87 /* jni_md.h */,
+				1DED64452807439200121B87 /* jawt_md.h */,
+			);
+			path = darwin;
+			sourceTree = "<group>";
+		};
+		1DED64472807439200121B87 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64482807439200121B87 /* libnet.dylib */,
+				1DED64492807439200121B87 /* libnio.dylib */,
+				1DED644A2807439200121B87 /* libinstrument.dylib */,
+				1DED644B2807439200121B87 /* libzip.dylib */,
+				1DED644C2807439200121B87 /* psfontj2d.properties */,
+				1DED644D2807439200121B87 /* fontconfig.properties.src */,
+				1DED644E2807439200121B87 /* libfreetype.dylib */,
+				1DED644F2807439200121B87 /* libjli.dylib */,
+				1DED64502807439200121B87 /* libsplashscreen.dylib */,
+				1DED64512807439200121B87 /* libmanagement_ext.dylib */,
+				1DED64522807439200121B87 /* libdt_socket.dylib */,
+				1DED64532807439200121B87 /* libj2pkcs11.dylib */,
+				1DED64542807439200121B87 /* jvm.cfg */,
+				1DED64552807439200121B87 /* libjimage.dylib */,
+				1DED64562807439200121B87 /* security */,
+				1DED645B2807439200121B87 /* jfr */,
+				1DED645E2807439200121B87 /* libosxkrb5.dylib */,
+				1DED645F2807439200121B87 /* libosxui.dylib */,
+				1DED64602807439200121B87 /* tzdb.dat */,
+				1DED64612807439200121B87 /* libmanagement_agent.dylib */,
+				1DED64622807439200121B87 /* librmi.dylib */,
+				1DED64632807439200121B87 /* libjdwp.dylib */,
+				1DED64642807439200121B87 /* libawt_lwawt.dylib */,
+				1DED64652807439200121B87 /* server */,
+				1DED646A2807439200121B87 /* libjavajpeg.dylib */,
+				1DED646B2807439200121B87 /* libmlib_image.dylib */,
+				1DED646C2807439200121B87 /* libmanagement.dylib */,
+				1DED646D2807439200121B87 /* libjsound.dylib */,
+				1DED646E2807439200121B87 /* ct.sym */,
+				1DED646F2807439200121B87 /* libj2pcsc.dylib */,
+				1DED64702807439200121B87 /* libjsig.dylib */,
+				1DED64712807439200121B87 /* libprefs.dylib */,
+				1DED64722807439200121B87 /* libjawt.dylib */,
+				1DED64732807439200121B87 /* libattach.dylib */,
+				1DED64742807439200121B87 /* jrt-fs.jar */,
+				1DED64752807439200121B87 /* libfontmanager.dylib */,
+				1DED64762807439200121B87 /* fontconfig.bfc */,
+				1DED64772807439200121B87 /* src.zip */,
+				1DED64782807439200121B87 /* jspawnhelper */,
+				1DED64792807439200121B87 /* libosxsecurity.dylib */,
+				1DED647A2807439200121B87 /* libextnet.dylib */,
+				1DED647B2807439200121B87 /* libjaas.dylib */,
+				1DED647C2807439200121B87 /* liblcms.dylib */,
+				1DED647D2807439200121B87 /* libverify.dylib */,
+				1DED647E2807439200121B87 /* libharfbuzz.dylib */,
+				1DED647F2807439200121B87 /* psfont.properties.ja */,
+				1DED64802807439200121B87 /* libj2gss.dylib */,
+				1DED64812807439200121B87 /* libsaproc.dylib */,
+				1DED64822807439200121B87 /* modules */,
+				1DED64832807439200121B87 /* classlist */,
+				1DED64842807439200121B87 /* libjava.dylib */,
+				1DED64852807439200121B87 /* libawt.dylib */,
+				1DED64862807439200121B87 /* libosx.dylib */,
+				1DED64872807439200121B87 /* libosxapp.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		1DED64562807439200121B87 /* security */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64572807439200121B87 /* public_suffix_list.dat */,
+				1DED64582807439200121B87 /* default.policy */,
+				1DED64592807439200121B87 /* blacklisted.certs */,
+				1DED645A2807439200121B87 /* cacerts */,
+			);
+			path = security;
+			sourceTree = "<group>";
+		};
+		1DED645B2807439200121B87 /* jfr */ = {
+			isa = PBXGroup;
+			children = (
+				1DED645C2807439200121B87 /* default.jfc */,
+				1DED645D2807439200121B87 /* profile.jfc */,
+			);
+			path = jfr;
+			sourceTree = "<group>";
+		};
+		1DED64652807439200121B87 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64662807439200121B87 /* classes_nocoops.jsa */,
+				1DED64672807439200121B87 /* libjvm.dylib */,
+				1DED64682807439200121B87 /* classes.jsa */,
+				1DED64692807439200121B87 /* libjsig.dylib */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		1DED64882807439200121B87 /* legal */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64892807439200121B87 /* java.management.rmi */,
+				1DED648C2807439200121B87 /* jdk.unsupported.desktop */,
+				1DED648F2807439200121B87 /* java.se */,
+				1DED64922807439200121B87 /* java.security.jgss */,
+				1DED64952807439200121B87 /* jdk.jfr */,
+				1DED64982807439200121B87 /* java.management */,
+				1DED649B2807439200121B87 /* java.security.sasl */,
+				1DED649E2807439200121B87 /* jdk.net */,
+				1DED64A12807439200121B87 /* jdk.jsobject */,
+				1DED64A42807439200121B87 /* jdk.zipfs */,
+				1DED64A72807439200121B87 /* jdk.incubator.vector */,
+				1DED64AA2807439200121B87 /* jdk.dynalink */,
+				1DED64AE2807439200121B87 /* java.compiler */,
+				1DED64B12807439200121B87 /* java.xml */,
+				1DED64B92807439200121B87 /* jdk.jcmd */,
+				1DED64BC2807439200121B87 /* jdk.naming.dns */,
+				1DED64BF2807439200121B87 /* java.instrument */,
+				1DED64C22807439200121B87 /* jdk.localedata */,
+				1DED64C72807439200121B87 /* jdk.naming.rmi */,
+				1DED64CA2807439200121B87 /* jdk.compiler */,
+				1DED64CD2807439200121B87 /* java.prefs */,
+				1DED64D02807439200121B87 /* jdk.crypto.cryptoki */,
+				1DED64D52807439200121B87 /* jdk.editpad */,
+				1DED64D82807439200121B87 /* java.logging */,
+				1DED64DB2807439200121B87 /* jdk.management */,
+				1DED64DE2807439200121B87 /* java.base */,
+				1DED64E82807439200121B87 /* java.net.http */,
+				1DED64EB2807439200121B87 /* jdk.jpackage */,
+				1DED64EE2807439200121B87 /* jdk.internal.opt */,
+				1DED64F22807439200121B87 /* jdk.jconsole */,
+				1DED64F52807439200121B87 /* java.sql.rowset */,
+				1DED64F82807439200121B87 /* jdk.security.jgss */,
+				1DED64FB2807439200121B87 /* jdk.httpserver */,
+				1DED64FE2807439200121B87 /* java.naming */,
+				1DED65012807439200121B87 /* jdk.internal.jvmstat */,
+				1DED65042807439200121B87 /* jdk.jartool */,
+				1DED65072807439200121B87 /* jdk.unsupported */,
+				1DED650A2807439200121B87 /* jdk.jdwp.agent */,
+				1DED650D2807439200121B87 /* jdk.internal.le */,
+				1DED65112807439200121B87 /* jdk.internal.ed */,
+				1DED65142807439200121B87 /* java.scripting */,
+				1DED65172807439300121B87 /* jdk.attach */,
+				1DED651A2807439300121B87 /* jdk.security.auth */,
+				1DED651D2807439300121B87 /* jdk.xml.dom */,
+				1DED65202807439300121B87 /* jdk.charsets */,
+				1DED65232807439300121B87 /* jdk.sctp */,
+				1DED65262807439300121B87 /* java.rmi */,
+				1DED65292807439300121B87 /* java.smartcardio */,
+				1DED652D2807439300121B87 /* jdk.jstatd */,
+				1DED65302807439300121B87 /* java.transaction.xa */,
+				1DED65332807439300121B87 /* jdk.hotspot.agent */,
+				1DED65362807439300121B87 /* jdk.jdi */,
+				1DED65392807439300121B87 /* jdk.javadoc */,
+				1DED653E2807439300121B87 /* jdk.jlink */,
+				1DED65412807439300121B87 /* jdk.incubator.foreign */,
+				1DED65442807439300121B87 /* jdk.nio.mapmode */,
+				1DED65472807439300121B87 /* java.sql */,
+				1DED654A2807439300121B87 /* jdk.management.jfr */,
+				1DED654D2807439300121B87 /* jdk.accessibility */,
+				1DED65502807439300121B87 /* java.datatransfer */,
+				1DED65532807439300121B87 /* jdk.jshell */,
+				1DED65562807439300121B87 /* jdk.jdeps */,
+				1DED65592807439300121B87 /* java.desktop */,
+				1DED65652807439300121B87 /* jdk.crypto.ec */,
+				1DED65682807439300121B87 /* jdk.management.agent */,
+				1DED656B2807439300121B87 /* java.xml.crypto */,
+				1DED656F2807439300121B87 /* jdk.internal.vm.ci */,
+			);
+			path = legal;
+			sourceTree = "<group>";
+		};
+		1DED64892807439200121B87 /* java.management.rmi */ = {
+			isa = PBXGroup;
+			children = (
+				1DED648A2807439200121B87 /* LICENSE */,
+				1DED648B2807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.management.rmi;
+			sourceTree = "<group>";
+		};
+		1DED648C2807439200121B87 /* jdk.unsupported.desktop */ = {
+			isa = PBXGroup;
+			children = (
+				1DED648D2807439200121B87 /* LICENSE */,
+				1DED648E2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.unsupported.desktop;
+			sourceTree = "<group>";
+		};
+		1DED648F2807439200121B87 /* java.se */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64902807439200121B87 /* LICENSE */,
+				1DED64912807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.se;
+			sourceTree = "<group>";
+		};
+		1DED64922807439200121B87 /* java.security.jgss */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64932807439200121B87 /* LICENSE */,
+				1DED64942807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.security.jgss;
+			sourceTree = "<group>";
+		};
+		1DED64952807439200121B87 /* jdk.jfr */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64962807439200121B87 /* LICENSE */,
+				1DED64972807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jfr;
+			sourceTree = "<group>";
+		};
+		1DED64982807439200121B87 /* java.management */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64992807439200121B87 /* LICENSE */,
+				1DED649A2807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.management;
+			sourceTree = "<group>";
+		};
+		1DED649B2807439200121B87 /* java.security.sasl */ = {
+			isa = PBXGroup;
+			children = (
+				1DED649C2807439200121B87 /* LICENSE */,
+				1DED649D2807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.security.sasl;
+			sourceTree = "<group>";
+		};
+		1DED649E2807439200121B87 /* jdk.net */ = {
+			isa = PBXGroup;
+			children = (
+				1DED649F2807439200121B87 /* LICENSE */,
+				1DED64A02807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.net;
+			sourceTree = "<group>";
+		};
+		1DED64A12807439200121B87 /* jdk.jsobject */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64A22807439200121B87 /* LICENSE */,
+				1DED64A32807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jsobject;
+			sourceTree = "<group>";
+		};
+		1DED64A42807439200121B87 /* jdk.zipfs */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64A52807439200121B87 /* LICENSE */,
+				1DED64A62807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.zipfs;
+			sourceTree = "<group>";
+		};
+		1DED64A72807439200121B87 /* jdk.incubator.vector */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64A82807439200121B87 /* LICENSE */,
+				1DED64A92807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.incubator.vector;
+			sourceTree = "<group>";
+		};
+		1DED64AA2807439200121B87 /* jdk.dynalink */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64AB2807439200121B87 /* LICENSE */,
+				1DED64AC2807439200121B87 /* COPYRIGHT */,
+				1DED64AD2807439200121B87 /* dynalink.md */,
+			);
+			path = jdk.dynalink;
+			sourceTree = "<group>";
+		};
+		1DED64AE2807439200121B87 /* java.compiler */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64AF2807439200121B87 /* LICENSE */,
+				1DED64B02807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.compiler;
+			sourceTree = "<group>";
+		};
+		1DED64B12807439200121B87 /* java.xml */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64B22807439200121B87 /* bcel.md */,
+				1DED64B32807439200121B87 /* LICENSE */,
+				1DED64B42807439200121B87 /* xalan.md */,
+				1DED64B52807439200121B87 /* dom.md */,
+				1DED64B62807439200121B87 /* COPYRIGHT */,
+				1DED64B72807439200121B87 /* jcup.md */,
+				1DED64B82807439200121B87 /* xerces.md */,
+			);
+			path = java.xml;
+			sourceTree = "<group>";
+		};
+		1DED64B92807439200121B87 /* jdk.jcmd */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64BA2807439200121B87 /* LICENSE */,
+				1DED64BB2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jcmd;
+			sourceTree = "<group>";
+		};
+		1DED64BC2807439200121B87 /* jdk.naming.dns */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64BD2807439200121B87 /* LICENSE */,
+				1DED64BE2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.naming.dns;
+			sourceTree = "<group>";
+		};
+		1DED64BF2807439200121B87 /* java.instrument */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64C02807439200121B87 /* LICENSE */,
+				1DED64C12807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.instrument;
+			sourceTree = "<group>";
+		};
+		1DED64C22807439200121B87 /* jdk.localedata */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64C32807439200121B87 /* LICENSE */,
+				1DED64C42807439200121B87 /* cldr.md */,
+				1DED64C52807439200121B87 /* COPYRIGHT */,
+				1DED64C62807439200121B87 /* thaidict.md */,
+			);
+			path = jdk.localedata;
+			sourceTree = "<group>";
+		};
+		1DED64C72807439200121B87 /* jdk.naming.rmi */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64C82807439200121B87 /* LICENSE */,
+				1DED64C92807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.naming.rmi;
+			sourceTree = "<group>";
+		};
+		1DED64CA2807439200121B87 /* jdk.compiler */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64CB2807439200121B87 /* LICENSE */,
+				1DED64CC2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.compiler;
+			sourceTree = "<group>";
+		};
+		1DED64CD2807439200121B87 /* java.prefs */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64CE2807439200121B87 /* LICENSE */,
+				1DED64CF2807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.prefs;
+			sourceTree = "<group>";
+		};
+		1DED64D02807439200121B87 /* jdk.crypto.cryptoki */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64D12807439200121B87 /* LICENSE */,
+				1DED64D22807439200121B87 /* pkcs11wrapper.md */,
+				1DED64D32807439200121B87 /* pkcs11cryptotoken.md */,
+				1DED64D42807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.crypto.cryptoki;
+			sourceTree = "<group>";
+		};
+		1DED64D52807439200121B87 /* jdk.editpad */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64D62807439200121B87 /* LICENSE */,
+				1DED64D72807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.editpad;
+			sourceTree = "<group>";
+		};
+		1DED64D82807439200121B87 /* java.logging */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64D92807439200121B87 /* LICENSE */,
+				1DED64DA2807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.logging;
+			sourceTree = "<group>";
+		};
+		1DED64DB2807439200121B87 /* jdk.management */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64DC2807439200121B87 /* LICENSE */,
+				1DED64DD2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.management;
+			sourceTree = "<group>";
+		};
+		1DED64DE2807439200121B87 /* java.base */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64DF2807439200121B87 /* asm.md */,
+				1DED64E02807439200121B87 /* LICENSE */,
+				1DED64E12807439200121B87 /* public_suffix.md */,
+				1DED64E22807439200121B87 /* cldr.md */,
+				1DED64E32807439200121B87 /* icu.md */,
+				1DED64E42807439200121B87 /* unicode.md */,
+				1DED64E52807439200121B87 /* COPYRIGHT */,
+				1DED64E62807439200121B87 /* c-libutl.md */,
+				1DED64E72807439200121B87 /* aes.md */,
+			);
+			path = java.base;
+			sourceTree = "<group>";
+		};
+		1DED64E82807439200121B87 /* java.net.http */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64E92807439200121B87 /* LICENSE */,
+				1DED64EA2807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.net.http;
+			sourceTree = "<group>";
+		};
+		1DED64EB2807439200121B87 /* jdk.jpackage */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64EC2807439200121B87 /* LICENSE */,
+				1DED64ED2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jpackage;
+			sourceTree = "<group>";
+		};
+		1DED64EE2807439200121B87 /* jdk.internal.opt */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64EF2807439200121B87 /* LICENSE */,
+				1DED64F02807439200121B87 /* jopt-simple.md */,
+				1DED64F12807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.internal.opt;
+			sourceTree = "<group>";
+		};
+		1DED64F22807439200121B87 /* jdk.jconsole */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64F32807439200121B87 /* LICENSE */,
+				1DED64F42807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jconsole;
+			sourceTree = "<group>";
+		};
+		1DED64F52807439200121B87 /* java.sql.rowset */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64F62807439200121B87 /* LICENSE */,
+				1DED64F72807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.sql.rowset;
+			sourceTree = "<group>";
+		};
+		1DED64F82807439200121B87 /* jdk.security.jgss */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64F92807439200121B87 /* LICENSE */,
+				1DED64FA2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.security.jgss;
+			sourceTree = "<group>";
+		};
+		1DED64FB2807439200121B87 /* jdk.httpserver */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64FC2807439200121B87 /* LICENSE */,
+				1DED64FD2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.httpserver;
+			sourceTree = "<group>";
+		};
+		1DED64FE2807439200121B87 /* java.naming */ = {
+			isa = PBXGroup;
+			children = (
+				1DED64FF2807439200121B87 /* LICENSE */,
+				1DED65002807439200121B87 /* COPYRIGHT */,
+			);
+			path = java.naming;
+			sourceTree = "<group>";
+		};
+		1DED65012807439200121B87 /* jdk.internal.jvmstat */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65022807439200121B87 /* LICENSE */,
+				1DED65032807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.internal.jvmstat;
+			sourceTree = "<group>";
+		};
+		1DED65042807439200121B87 /* jdk.jartool */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65052807439200121B87 /* LICENSE */,
+				1DED65062807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jartool;
+			sourceTree = "<group>";
+		};
+		1DED65072807439200121B87 /* jdk.unsupported */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65082807439200121B87 /* LICENSE */,
+				1DED65092807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.unsupported;
+			sourceTree = "<group>";
+		};
+		1DED650A2807439200121B87 /* jdk.jdwp.agent */ = {
+			isa = PBXGroup;
+			children = (
+				1DED650B2807439200121B87 /* LICENSE */,
+				1DED650C2807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jdwp.agent;
+			sourceTree = "<group>";
+		};
+		1DED650D2807439200121B87 /* jdk.internal.le */ = {
+			isa = PBXGroup;
+			children = (
+				1DED650E2807439200121B87 /* LICENSE */,
+				1DED650F2807439200121B87 /* COPYRIGHT */,
+				1DED65102807439200121B87 /* jline.md */,
+			);
+			path = jdk.internal.le;
+			sourceTree = "<group>";
+		};
+		1DED65112807439200121B87 /* jdk.internal.ed */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65122807439200121B87 /* LICENSE */,
+				1DED65132807439200121B87 /* COPYRIGHT */,
+			);
+			path = jdk.internal.ed;
+			sourceTree = "<group>";
+		};
+		1DED65142807439200121B87 /* java.scripting */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65152807439200121B87 /* LICENSE */,
+				1DED65162807439300121B87 /* COPYRIGHT */,
+			);
+			path = java.scripting;
+			sourceTree = "<group>";
+		};
+		1DED65172807439300121B87 /* jdk.attach */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65182807439300121B87 /* LICENSE */,
+				1DED65192807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.attach;
+			sourceTree = "<group>";
+		};
+		1DED651A2807439300121B87 /* jdk.security.auth */ = {
+			isa = PBXGroup;
+			children = (
+				1DED651B2807439300121B87 /* LICENSE */,
+				1DED651C2807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.security.auth;
+			sourceTree = "<group>";
+		};
+		1DED651D2807439300121B87 /* jdk.xml.dom */ = {
+			isa = PBXGroup;
+			children = (
+				1DED651E2807439300121B87 /* LICENSE */,
+				1DED651F2807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.xml.dom;
+			sourceTree = "<group>";
+		};
+		1DED65202807439300121B87 /* jdk.charsets */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65212807439300121B87 /* LICENSE */,
+				1DED65222807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.charsets;
+			sourceTree = "<group>";
+		};
+		1DED65232807439300121B87 /* jdk.sctp */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65242807439300121B87 /* LICENSE */,
+				1DED65252807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.sctp;
+			sourceTree = "<group>";
+		};
+		1DED65262807439300121B87 /* java.rmi */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65272807439300121B87 /* LICENSE */,
+				1DED65282807439300121B87 /* COPYRIGHT */,
+			);
+			path = java.rmi;
+			sourceTree = "<group>";
+		};
+		1DED65292807439300121B87 /* java.smartcardio */ = {
+			isa = PBXGroup;
+			children = (
+				1DED652A2807439300121B87 /* LICENSE */,
+				1DED652B2807439300121B87 /* COPYRIGHT */,
+				1DED652C2807439300121B87 /* pcsclite.md */,
+			);
+			path = java.smartcardio;
+			sourceTree = "<group>";
+		};
+		1DED652D2807439300121B87 /* jdk.jstatd */ = {
+			isa = PBXGroup;
+			children = (
+				1DED652E2807439300121B87 /* LICENSE */,
+				1DED652F2807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jstatd;
+			sourceTree = "<group>";
+		};
+		1DED65302807439300121B87 /* java.transaction.xa */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65312807439300121B87 /* LICENSE */,
+				1DED65322807439300121B87 /* COPYRIGHT */,
+			);
+			path = java.transaction.xa;
+			sourceTree = "<group>";
+		};
+		1DED65332807439300121B87 /* jdk.hotspot.agent */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65342807439300121B87 /* LICENSE */,
+				1DED65352807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.hotspot.agent;
+			sourceTree = "<group>";
+		};
+		1DED65362807439300121B87 /* jdk.jdi */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65372807439300121B87 /* LICENSE */,
+				1DED65382807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jdi;
+			sourceTree = "<group>";
+		};
+		1DED65392807439300121B87 /* jdk.javadoc */ = {
+			isa = PBXGroup;
+			children = (
+				1DED653A2807439300121B87 /* jquery.md */,
+				1DED653B2807439300121B87 /* LICENSE */,
+				1DED653C2807439300121B87 /* jqueryUI.md */,
+				1DED653D2807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.javadoc;
+			sourceTree = "<group>";
+		};
+		1DED653E2807439300121B87 /* jdk.jlink */ = {
+			isa = PBXGroup;
+			children = (
+				1DED653F2807439300121B87 /* LICENSE */,
+				1DED65402807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jlink;
+			sourceTree = "<group>";
+		};
+		1DED65412807439300121B87 /* jdk.incubator.foreign */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65422807439300121B87 /* LICENSE */,
+				1DED65432807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.incubator.foreign;
+			sourceTree = "<group>";
+		};
+		1DED65442807439300121B87 /* jdk.nio.mapmode */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65452807439300121B87 /* LICENSE */,
+				1DED65462807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.nio.mapmode;
+			sourceTree = "<group>";
+		};
+		1DED65472807439300121B87 /* java.sql */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65482807439300121B87 /* LICENSE */,
+				1DED65492807439300121B87 /* COPYRIGHT */,
+			);
+			path = java.sql;
+			sourceTree = "<group>";
+		};
+		1DED654A2807439300121B87 /* jdk.management.jfr */ = {
+			isa = PBXGroup;
+			children = (
+				1DED654B2807439300121B87 /* LICENSE */,
+				1DED654C2807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.management.jfr;
+			sourceTree = "<group>";
+		};
+		1DED654D2807439300121B87 /* jdk.accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				1DED654E2807439300121B87 /* LICENSE */,
+				1DED654F2807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.accessibility;
+			sourceTree = "<group>";
+		};
+		1DED65502807439300121B87 /* java.datatransfer */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65512807439300121B87 /* LICENSE */,
+				1DED65522807439300121B87 /* COPYRIGHT */,
+			);
+			path = java.datatransfer;
+			sourceTree = "<group>";
+		};
+		1DED65532807439300121B87 /* jdk.jshell */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65542807439300121B87 /* LICENSE */,
+				1DED65552807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jshell;
+			sourceTree = "<group>";
+		};
+		1DED65562807439300121B87 /* jdk.jdeps */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65572807439300121B87 /* LICENSE */,
+				1DED65582807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.jdeps;
+			sourceTree = "<group>";
+		};
+		1DED65592807439300121B87 /* java.desktop */ = {
+			isa = PBXGroup;
+			children = (
+				1DED655A2807439300121B87 /* freetype.md */,
+				1DED655B2807439300121B87 /* mesa3d.md */,
+				1DED655C2807439300121B87 /* colorimaging.md */,
+				1DED655D2807439300121B87 /* LICENSE */,
+				1DED655E2807439300121B87 /* libpng.md */,
+				1DED655F2807439300121B87 /* xwd.md */,
+				1DED65602807439300121B87 /* giflib.md */,
+				1DED65612807439300121B87 /* COPYRIGHT */,
+				1DED65622807439300121B87 /* harfbuzz.md */,
+				1DED65632807439300121B87 /* jpeg.md */,
+				1DED65642807439300121B87 /* lcms.md */,
+			);
+			path = java.desktop;
+			sourceTree = "<group>";
+		};
+		1DED65652807439300121B87 /* jdk.crypto.ec */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65662807439300121B87 /* LICENSE */,
+				1DED65672807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.crypto.ec;
+			sourceTree = "<group>";
+		};
+		1DED65682807439300121B87 /* jdk.management.agent */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65692807439300121B87 /* LICENSE */,
+				1DED656A2807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.management.agent;
+			sourceTree = "<group>";
+		};
+		1DED656B2807439300121B87 /* java.xml.crypto */ = {
+			isa = PBXGroup;
+			children = (
+				1DED656C2807439300121B87 /* LICENSE */,
+				1DED656D2807439300121B87 /* santuario.md */,
+				1DED656E2807439300121B87 /* COPYRIGHT */,
+			);
+			path = java.xml.crypto;
+			sourceTree = "<group>";
+		};
+		1DED656F2807439300121B87 /* jdk.internal.vm.ci */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65702807439300121B87 /* LICENSE */,
+				1DED65712807439300121B87 /* COPYRIGHT */,
+			);
+			path = jdk.internal.vm.ci;
+			sourceTree = "<group>";
+		};
+		1DED65722807439300121B87 /* conf */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65732807439300121B87 /* logging.properties */,
+				1DED65742807439300121B87 /* sound.properties */,
+				1DED65752807439300121B87 /* security */,
+				1DED65812807439300121B87 /* net.properties */,
+				1DED65822807439300121B87 /* management */,
+			);
+			path = conf;
+			sourceTree = "<group>";
+		};
+		1DED65752807439300121B87 /* security */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65762807439300121B87 /* java.security */,
+				1DED65772807439300121B87 /* java.policy */,
+				1DED65782807439300121B87 /* policy */,
+			);
+			path = security;
+			sourceTree = "<group>";
+		};
+		1DED65782807439300121B87 /* policy */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65792807439300121B87 /* unlimited */,
+				1DED657C2807439300121B87 /* README.txt */,
+				1DED657D2807439300121B87 /* limited */,
+			);
+			path = policy;
+			sourceTree = "<group>";
+		};
+		1DED65792807439300121B87 /* unlimited */ = {
+			isa = PBXGroup;
+			children = (
+				1DED657A2807439300121B87 /* default_US_export.policy */,
+				1DED657B2807439300121B87 /* default_local.policy */,
+			);
+			path = unlimited;
+			sourceTree = "<group>";
+		};
+		1DED657D2807439300121B87 /* limited */ = {
+			isa = PBXGroup;
+			children = (
+				1DED657E2807439300121B87 /* default_US_export.policy */,
+				1DED657F2807439300121B87 /* exempt_local.policy */,
+				1DED65802807439300121B87 /* default_local.policy */,
+			);
+			path = limited;
+			sourceTree = "<group>";
+		};
+		1DED65822807439300121B87 /* management */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65832807439300121B87 /* jmxremote.access */,
+				1DED65842807439300121B87 /* management.properties */,
+				1DED65852807439300121B87 /* jmxremote.password.template */,
+			);
+			path = management;
+			sourceTree = "<group>";
+		};
+		1DED65862807439300121B87 /* jmods */ = {
+			isa = PBXGroup;
+			children = (
+				1DED65872807439300121B87 /* java.security.sasl.jmod */,
+				1DED65882807439300121B87 /* jdk.jartool.jmod */,
+				1DED65892807439300121B87 /* java.se.jmod */,
+				1DED658A2807439300121B87 /* jdk.zipfs.jmod */,
+				1DED658B2807439300121B87 /* jdk.jdeps.jmod */,
+				1DED658C2807439300121B87 /* jdk.jstatd.jmod */,
+				1DED658D2807439300121B87 /* jdk.jdwp.agent.jmod */,
+				1DED658E2807439300121B87 /* java.sql.jmod */,
+				1DED658F2807439300121B87 /* jdk.incubator.foreign.jmod */,
+				1DED65902807439300121B87 /* java.smartcardio.jmod */,
+				1DED65912807439300121B87 /* jdk.hotspot.agent.jmod */,
+				1DED65922807439300121B87 /* jdk.internal.jvmstat.jmod */,
+				1DED65932807439300121B87 /* java.compiler.jmod */,
+				1DED65942807439300121B87 /* jdk.incubator.vector.jmod */,
+				1DED65952807439300121B87 /* java.sql.rowset.jmod */,
+				1DED65962807439300121B87 /* jdk.jfr.jmod */,
+				1DED65972807439300121B87 /* jdk.jpackage.jmod */,
+				1DED65982807439300121B87 /* jdk.crypto.cryptoki.jmod */,
+				1DED65992807439300121B87 /* jdk.unsupported.desktop.jmod */,
+				1DED659A2807439300121B87 /* jdk.management.jmod */,
+				1DED659B2807439300121B87 /* java.rmi.jmod */,
+				1DED659C2807439300121B87 /* jdk.management.jfr.jmod */,
+				1DED659D2807439300121B87 /* jdk.sctp.jmod */,
+				1DED659E2807439300121B87 /* jdk.security.jgss.jmod */,
+				1DED659F2807439300121B87 /* jdk.net.jmod */,
+				1DED65A02807439300121B87 /* java.prefs.jmod */,
+				1DED65A12807439300121B87 /* java.logging.jmod */,
+				1DED65A22807439300121B87 /* jdk.xml.dom.jmod */,
+				1DED65A32807439300121B87 /* java.base.jmod */,
+				1DED65A42807439300121B87 /* java.xml.crypto.jmod */,
+				1DED65A52807439300121B87 /* java.naming.jmod */,
+				1DED65A62807439300121B87 /* jdk.internal.ed.jmod */,
+				1DED65A72807439300121B87 /* jdk.naming.dns.jmod */,
+				1DED65A82807439300121B87 /* java.datatransfer.jmod */,
+				1DED65A92807439300121B87 /* jdk.unsupported.jmod */,
+				1DED65AA2807439300121B87 /* jdk.jlink.jmod */,
+				1DED65AB2807439300121B87 /* jdk.charsets.jmod */,
+				1DED65AC2807439300121B87 /* jdk.localedata.jmod */,
+				1DED65AD2807439300121B87 /* jdk.jcmd.jmod */,
+				1DED65AE2807439300121B87 /* java.desktop.jmod */,
+				1DED65AF2807439300121B87 /* jdk.accessibility.jmod */,
+				1DED65B02807439300121B87 /* jdk.attach.jmod */,
+				1DED65B12807439300121B87 /* java.management.rmi.jmod */,
+				1DED65B22807439300121B87 /* java.transaction.xa.jmod */,
+				1DED65B32807439300121B87 /* jdk.jshell.jmod */,
+				1DED65B42807439300121B87 /* java.xml.jmod */,
+				1DED65B52807439300121B87 /* java.management.jmod */,
+				1DED65B62807439300121B87 /* jdk.internal.opt.jmod */,
+				1DED65B72807439300121B87 /* jdk.httpserver.jmod */,
+				1DED65B82807439300121B87 /* java.net.http.jmod */,
+				1DED65B92807439300121B87 /* jdk.compiler.jmod */,
+				1DED65BA2807439300121B87 /* jdk.internal.le.jmod */,
+				1DED65BB2807439300121B87 /* java.instrument.jmod */,
+				1DED65BC2807439300121B87 /* jdk.dynalink.jmod */,
+				1DED65BD2807439300121B87 /* jdk.management.agent.jmod */,
+				1DED65BE2807439300121B87 /* jdk.internal.vm.ci.jmod */,
+				1DED65BF2807439300121B87 /* jdk.security.auth.jmod */,
+				1DED65C02807439300121B87 /* java.scripting.jmod */,
+				1DED65C12807439300121B87 /* jdk.jdi.jmod */,
+				1DED65C22807439300121B87 /* jdk.crypto.ec.jmod */,
+				1DED65C32807439300121B87 /* jdk.naming.rmi.jmod */,
+				1DED65C42807439300121B87 /* jdk.jconsole.jmod */,
+				1DED65C52807439300121B87 /* jdk.javadoc.jmod */,
+				1DED65C62807439300121B87 /* jdk.editpad.jmod */,
+				1DED65C72807439300121B87 /* jdk.jsobject.jmod */,
+				1DED65C82807439300121B87 /* java.security.jgss.jmod */,
+				1DED65C92807439300121B87 /* jdk.nio.mapmode.jmod */,
+			);
+			path = jmods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1DC154A02803A8A50089CF1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC154A72803A8A50089CF1D /* main.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		1DC15469280229350089CF1D /* CeroClient */ = {
+		1DC15469280229350089CF1D /* Launcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DC15471280229350089CF1D /* Build configuration list for PBXNativeTarget "CeroClient" */;
+			buildConfigurationList = 1DC15471280229350089CF1D /* Build configuration list for PBXNativeTarget "Launcher" */;
 			buildPhases = (
 				1DC15466280229350089CF1D /* Sources */,
 				1DC15467280229350089CF1D /* Frameworks */,
-				1DC15468280229350089CF1D /* CopyFiles */,
+				1DC15468280229350089CF1D /* Copy Files */,
+				1DC154B82803B1200089CF1D /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DC154B72803B1200089CF1D /* PBXTargetDependency */,
+			);
+			name = Launcher;
+			packageProductDependencies = (
+			);
+			productName = CeroClient;
+			productReference = 1DC1546A280229350089CF1D /* Launcher */;
+			productType = "com.apple.product-type.tool";
+		};
+		1DC154A32803A8A50089CF1D /* Bootstrap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC154AA2803A8A50089CF1D /* Build configuration list for PBXNativeTarget "Bootstrap" */;
+			buildPhases = (
+				1DC154A02803A8A50089CF1D /* Headers */,
+				1DC154A12803A8A50089CF1D /* Sources */,
+				1DC154A22803A8A50089CF1D /* Frameworks */,
+				1DED65D528077A2200121B87 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CeroClient;
-			productName = CeroClient;
-			productReference = 1DC1546A280229350089CF1D /* CeroClient */;
-			productType = "com.apple.product-type.tool";
+			name = Bootstrap;
+			packageProductDependencies = (
+			);
+			productName = CeroClientBootstrap;
+			productReference = 1DC154A42803A8A50089CF1D /* libBootstrap.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +1829,11 @@
 				TargetAttributes = {
 					1DC15469280229350089CF1D = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					1DC154A32803A8A50089CF1D = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -106,11 +1846,14 @@
 				Base,
 			);
 			mainGroup = 1DC15461280229350089CF1D;
+			packageReferences = (
+			);
 			productRefGroup = 1DC1546B280229350089CF1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1DC15469280229350089CF1D /* CeroClient */,
+				1DC15469280229350089CF1D /* Launcher */,
+				1DC154A32803A8A50089CF1D /* Bootstrap */,
 			);
 		};
 /* End PBXProject section */
@@ -120,11 +1863,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC1546E280229350089CF1D /* main.swift in Sources */,
+				1DC1548A280285C50089CF1D /* Injector.swift in Sources */,
+				1DC1547E28022B760089CF1D /* main.swift in Sources */,
+				1D5B88AD28064BF40008341F /* dummy.cpp in Sources */,
+				1DED63F5280739AB00121B87 /* CommandUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC154A12803A8A50089CF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4BFFE42810CE6D00E90288 /* Player.swift in Sources */,
+				1D4BFFE22810CBD100E90288 /* Mappings.swift in Sources */,
+				1D4BFFC6280E0E4900E90288 /* Fields.swift in Sources */,
+				1DC154B22803AAE10089CF1D /* BootstrapMain.swift in Sources */,
+				1DED65DC2807AC2E00121B87 /* Pointers+CeroClient.swift in Sources */,
+				1D4BFFD0280E71AC00E90288 /* String.swift in Sources */,
+				1DED63F828073B2C00121B87 /* Logging.swift in Sources */,
+				1D4BFFE02810C21500E90288 /* MCLogger.swift in Sources */,
+				1D4BFFD6280F3AE200E90288 /* JavaClassWrapper+Methods.swift in Sources */,
+				1D4BFFBB280A213A00E90288 /* CeroClient.swift in Sources */,
+				1D4BFFC0280CF04900E90288 /* JavaClassWrapper.swift in Sources */,
+				1D4BFFCE280E5D9E00E90288 /* Strings.swift in Sources */,
+				1D4BFFBD280BC39600E90288 /* JNI.swift in Sources */,
+				1D4BFFE62810DAB600E90288 /* World.swift in Sources */,
+				1D4BFFC8280E2A5000E90288 /* Classes.swift in Sources */,
+				1DED63F6280739AB00121B87 /* CommandUtils.swift in Sources */,
+				1D4BFFC4280E0DE900E90288 /* Methods.swift in Sources */,
+				1D4BFFCA280E48A400E90288 /* Objects.swift in Sources */,
+				1D4BFFD2280E74A400E90288 /* References.swift in Sources */,
+				1D4BFFCC280E5CB200E90288 /* Arrays.swift in Sources */,
+				1DC1550028049BFE0089CF1D /* main.c in Sources */,
+				1D4BFFDC2810923600E90288 /* Minecraft.swift in Sources */,
+				1D4BFFD8280F4DC900E90288 /* JavaClassWrapper+Fields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DC154B72803B1200089CF1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DC154A32803A8A50089CF1D /* Bootstrap */;
+			targetProxy = 1DC154B62803B1200089CF1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DC1546F280229350089CF1D /* Debug */ = {
@@ -243,8 +2027,30 @@
 		1DC15472280229350089CF1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Launcher/Bundle Info/CeroClient.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "";
+				INFOPLIST_PREPROCESS = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependancies",
+					"$(PROJECT_DIR)/Dependancies/libRemoteExec",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Headers/LauncherBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -252,8 +2058,96 @@
 		1DC15473280229350089CF1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Launcher/Bundle Info/CeroClient.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "";
+				INFOPLIST_PREPROCESS = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependancies",
+					"$(PROJECT_DIR)/Dependancies/libRemoteExec",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Headers/LauncherBridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1DC154AB2803A8A50089CF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = CeroClientBootstrap;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home/lib",
+					"$(LOCAL_LIBRARY_DIR)/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/MacOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cero.client.bootstrap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = Headers/BootstrapBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1DC154AC2803A8A50089CF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = CeroClientBootstrap;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home/lib",
+					"$(LOCAL_LIBRARY_DIR)/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/MacOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cero.client.bootstrap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = Headers/BootstrapBridgingHeader.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -270,11 +2164,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DC15471280229350089CF1D /* Build configuration list for PBXNativeTarget "CeroClient" */ = {
+		1DC15471280229350089CF1D /* Build configuration list for PBXNativeTarget "Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DC15472280229350089CF1D /* Debug */,
 				1DC15473280229350089CF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC154AA2803A8A50089CF1D /* Build configuration list for PBXNativeTarget "Bootstrap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC154AB2803A8A50089CF1D /* Debug */,
+				1DC154AC2803A8A50089CF1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
